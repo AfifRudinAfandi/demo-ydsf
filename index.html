@@ -214,10 +214,43 @@
 
 
 <section class="programs-category">
-  <h2 class="category-program-title">Fundraising <span>Programs</span></h2>
-  <p class="category-program-content">Every donation you have millions of benefits for others</p>
+  <div class="section-top-category">
+    <h2 class="category-program-title">Fundraising <span>Programs</span></h2>
+    <p class="category-program-content">Every donation you have millions of benefits for others</p>
+    <button type="button" class="btn btn-success btn-category" data-toggle="modal" data-target="#exampleModalCenter">
+      Browse Category<i class="fa fa-sliders"></i></button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-category">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Category Program Donasi</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <ul class="list-category">
+                <li class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="custom-control-label label-list-category" for="inlineCheckbox1">Social</label>
+                </li>
+                <li class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                  <label class="custom-control-label label-list-category" for="inlineCheckbox2">Social</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-category">Donasi Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
 
 
 
@@ -230,7 +263,7 @@
         Share to<br>Create <span class="span-first">Harmony</span> <span class="span-last">Lives</span>
       </h2>
       <p class="join-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>      
-      <a type="button" class="btn btn-success btn-join">Join with Us</a>
+      <a href="#" type="button" class="btn btn-success btn-join">Join with Us</a>
     </div>
     <h3 class="decor-join-title">Join with Us</h3>
   </div>
@@ -272,6 +305,7 @@
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              
             </ul>
           </div>
         </div>

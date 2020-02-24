@@ -303,13 +303,17 @@ img{
 .programs-category{
     padding-top: 160px;
 }
+.section-top-category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .category-program-title{
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 38px;
     color: #2D386E;
-    text-align: center;
 }
 .category-program-title span{
     font-weight: bold;
@@ -320,8 +324,83 @@ img{
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
     color: #909AAD;
+    margin-bottom: 60px;
+}
+
+.btn-category{
+    border-color: #48B349;
+    background: #48B349;
+    box-shadow: 0px 4px 24px rgba(72, 179, 73, 0.35);
+    border-radius: 80px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 12px 28px;
+}
+.btn-category i{
+    margin-left: 10px;
+}
+
+.modal-content-category {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    outline: 0;
+    min-height: 350px;
+}
+
+.modal-content-category .modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: none;
+    padding-top: 40px;
+}
+.modal-content-category .modal-header .modal-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2D386E;
+}
+.modal-header .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    width: 32px;
+    opacity: 100%;
+    background-image: url("../images/ic-close.svg");
+}
+.modal-content-category .modal-footer {
+    justify-content: center;
+    border: none;
+    padding-bottom: 40px;
+}
+.list-category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list-category li{
+    margin-right: 10px;
+}
+.label-list-category{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #909AAD;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #FFFFFF;
+    border-color: #48B349;
+    background-color: #48B349;
 }
 
 
