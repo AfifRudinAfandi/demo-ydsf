@@ -253,7 +253,6 @@ img{
     margin-bottom: 30px;
     padding-top: 78px;
     padding-bottom: 12px;
-    /* transition: all 0.2s ease-in-out; */
 }
 .horizontall-program{
     justify-content: center;
@@ -307,6 +306,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 .category-program-title{
     font-style: normal;
@@ -402,9 +402,114 @@ img{
     border-color: #48B349;
     background-color: #48B349;
 }
-
-
-
+.wrapper-card:hover{
+    text-decoration: none;
+}
+.card-program{
+    background: #FFFFFF;
+    border: 1px solid #E2EDF8;
+    box-sizing: border-box;
+    border-radius: 18px;
+    transition: all 0.2s ease-in-out;
+}
+.card-program:hover{
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.080);
+    transform: scale(1.008);
+}
+.card-img-top{
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.card-category{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #909AAD;
+    margin-bottom: 18px;
+}
+.title-project{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2D386E;
+    margin-bottom: 12px;
+}
+.card-program .card-body{
+    position: relative;
+}
+.card-body .cabang{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #909AAD;
+    margin-bottom: 30px;
+}
+.card-body .cabang i{
+    color: #FCBD60;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.wrapper-value{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper-value p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D386E;
+    margin-bottom: 10px;
+}
+.card-program .progress{
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.card-program .progress .progress-bar {
+    background-color: #48B349;
+}
+.wrapper-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrapper-time p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #909AAD;
+}
+.float-category{
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    width: 50px;
+}
+.show-more-wrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+.btn-show-more{
+    background: #FFFFFF;
+    border: 1px solid #E2EDF8;
+    box-sizing: border-box;
+    border-radius: 80px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 28px;
+    color: #48B349;
+}
 
 /* CARD */
 .card-join{
