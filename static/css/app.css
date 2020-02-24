@@ -1,0 +1,27 @@
+* {
+  font-family: 'Lato', sans-serif;
+ }
+ .nav-color{
+  background: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(72, 179, 74, 0.055);
+}
+
+
+.bg-change{
+  background-color: #48B349;
+  z-index: 10;
+  margin-top: 64px !important;
+  padding: 14px !important;
+}
+
+.bg-change .program-count ,
+.bg-change .program-title,
+.bg-change .idr,
+.bg-change .line-vertical{
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.add-margin{
+  margin-top: 220px;
+}
