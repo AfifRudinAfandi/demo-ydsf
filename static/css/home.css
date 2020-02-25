@@ -17,66 +17,6 @@
     line-height: 19px;
     color: #0C55A4;
 }
-.btn-language span{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #909AAD;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.itm-language span{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #909AAD;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.btn-profile span{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #2D386E;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-    color: #909aad;
-}
-.ic-language{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-}
-.active-notif{
-    display: flex;
-    position: relative;
-    margin-right: 18px;
-}
-.active-notif img{
-    pointer-events: none;
-}
-.active-notif .badge{
-    width: 8px;
-    height: 13px;
-    border-radius: 50%;
-    border: 1.5px solid #ffffff;
-    position: absolute;
-    top: 8px;
-    right: -4px;
-}
 
 
 /* HERO */
@@ -237,6 +177,7 @@ img{
     font-size: 18px;
     line-height: 38px;
     color: #909AAD;
+    margin-bottom: 40px;
 }
 .btn-hero{
     border-color: #48B349;
