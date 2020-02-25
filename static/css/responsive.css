@@ -4,13 +4,13 @@
         display: none;
     }
     .person-2 {
-        top: 16%;
+        top: 10%;
         left: 6%;
         width: 100px;
         animation: none;
     }
     .person-3 {
-        top: 34%;
+        top: 26%;
         left: auto;
         right: 3%;
         width: 138px;
@@ -21,30 +21,30 @@
         display: none;
     }
     .cloud-3 {
-        top: 45%;
+        top: 38%;
         left: 4%;
         width: 60px;
     }
     .cloud-4 {
         position: absolute;
-        top: 26%;
+        top: 20%;
         left: 36%;
         width: 52px;
     }
     .cloud-5 {
         position: absolute;
-        top: 15%;
+        top: 12%;
         left: auto;
         right: 8%;
     }
     .sun {
         position: absolute;
-        top: 11%;
+        top: 8%;
         left: auto;
         right: 6%;
     }
     .carousel-caption {
-        top: 50%;
+        top: 40%;
     }
     .br-1-hero{
         display: block;
