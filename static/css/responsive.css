@@ -3,6 +3,9 @@
     .mobile-lang{
         margin-left: auto;
     }
+    .btn-profile {
+        padding-left: 0;
+    }
     .person-1{
         display: none;
     }
