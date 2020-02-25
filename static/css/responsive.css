@@ -182,13 +182,13 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 601px) and (max-width: 767px) {
-    .person-1{
+    /* .person-1{
         top: 20%;
         left: 43%;
     }
     .person-2 {
         display: none;
-    }
+    } */
     .desc-hero {
         max-width: 340px;
     }
@@ -199,6 +199,9 @@
     .md-nav-right .active-notif,
     .md-nav-right .md-btn-lang{
         display: none !important;
+    }
+    .carousel-caption {
+        top: 40% !important;
     }
     .btn-profile{
         padding-left: 0;
@@ -212,18 +215,30 @@
     .br-3-hero{
         display: block;
     }
-    .person-1 {
-        width: 130px;
+    .person-1{
+        display: none;
     }
     .person-2 {
-        left: auto;
-        right: 21%;
-        width: 100px;
+        top: 12%;
+        left: 6%;
+        width: 120px;
+        animation: none;
     }
     .person-3 {
+        top: 30%;
         left: auto;
-        right: 1%;
-        width: 150px;
+        right: 3%;
+        animation: none;
+    }
+    .cloud-5 {
+        position: absolute;
+        top: 13%;
+        left: 72%;
+    }
+    .sun {
+        position: absolute;
+        top: 10%;
+        left: 78%;
     }
     .line-vertical-3{
         display: none;
