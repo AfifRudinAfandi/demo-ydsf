@@ -587,7 +587,7 @@
           $(function() {
           $('.rw-slider').bxSlider({
             auto: false,
-            autoControls: true,
+            autoControls: false,
             speed: 500,
             slideSelector: 'div.item',
             minSlides: 4,
@@ -595,7 +595,8 @@
             moveSlides: 1,
             slideWidth: 380,
             pager: false,
-            responsive: true
+            responsive: true,
+            touchEnabled: false,
 
 
           });

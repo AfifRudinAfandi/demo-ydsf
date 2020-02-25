@@ -570,7 +570,9 @@ img{
     line-height: 28px;
     color: #909AAD;
 }
-
+.card-success-story:hover{
+    transform: scale(1.008);
+}
 
 /* CARD */
 .card-join{
