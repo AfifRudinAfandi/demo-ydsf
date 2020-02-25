@@ -41,7 +41,7 @@ var windowsize = $(window).width();
       autoControls: false,
       speed: 500,
       slideSelector: 'div.item',
-      minSlides: 4,
+      minSlides: 2,
       maxSlides: 4,
       moveSlides: 1,
       pager: false,

@@ -50,7 +50,7 @@
         right: 6%;
     }
     .carousel-caption {
-        top: 40%;
+        top: 40% !important;
     }
     .title-hero {
         font-size: 42px;
@@ -150,8 +150,12 @@
         margin-bottom: 24px;
         margin-top: 30px;
     }
-    .footer-center{
-        width: 50%;
+    .footer-center-1{
+        width: 60%;
+        margin-bottom: 24px;
+    }
+    .footer-center-2{
+        width: 40%;
         margin-bottom: 24px;
     }
     .footer-right{
@@ -177,13 +181,114 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media (min-width: 601px) and (max-width: 767px) {
+    .person-1{
+        top: 20%;
+        left: 43%;
+    }
+    .person-2 {
+        display: none;
+    }
+    .desc-hero {
+        max-width: 340px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media (min-width: 601px) and (max-width: 991px) {
+    .md-nav-right .active-notif,
+    .md-nav-right .md-btn-lang{
+        display: none !important;
+    }
+    .btn-profile{
+        padding-left: 0;
+    }
+    .br-1-hero{
+        display: block;
+    }
+    .br-2-hero{
+        display: none;
+    }
+    .br-3-hero{
+        display: block;
+    }
+    .person-1 {
+        width: 130px;
+    }
+    .person-2 {
+        left: auto;
+        right: 21%;
+        width: 100px;
+    }
+    .person-3 {
+        left: auto;
+        right: 1%;
+        width: 150px;
+    }
+    .line-vertical-3{
+        display: none;
+    }
+    .content{
+        position: relative !important;
+    }
+    .bg-change{
+        padding-top: 78px;
+        padding-bottom: 12px;
+        background-color: #ffffff;
+    }
+    .bg-change .program-count {
+        color: #48B349;
+    }
+    .program-title{
+        margin-bottom: 20px;
+    }
+    .bg-change .program-title{
+        color: #909AAD;
+    }
+    .bg-change .idr, .bg-change .line-vertical{
+        border-color: #909AAD;
+    }
+    .add-margin{
+        margin-top: 0;
+    }
+    .programs-category {
+        padding-top: 70px;
+    }
+    .rw-category .card-col{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+    }
+    .card-join .container .wrapper-card {
+        width: 100%;
+        background-size: contain;
+    }
+    .footer::after{
+        content: "";
+        -webkit-transform: skewy(-5deg);
+        transform: skewy(-5deg);
+    }
+    .footer-left{
+        margin-bottom: 24px;
+        margin-top: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer-center-1{
+        width: 60%;
+        margin-bottom: 24px;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .footer-center-2{
+        width: 40%;
+        margin-bottom: 24px;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .footer-left .footer-content {
+        max-width: 370px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
