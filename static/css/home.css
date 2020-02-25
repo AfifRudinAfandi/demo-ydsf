@@ -134,6 +134,9 @@ img{
 .br-1-hero{
     display: none;
 }
+.br-3-hero{
+    display: none;
+}
 .carousel-item{
     height: 100vh;
 }

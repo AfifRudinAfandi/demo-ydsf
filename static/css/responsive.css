@@ -46,11 +46,26 @@
     .carousel-caption {
         top: 40%;
     }
+    .title-hero {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .title-hero .span-first {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .title-hero .span-last {
+        font-size: 42px;
+        line-height: 48px;
+    }
     .br-1-hero{
         display: block;
     }
     .br-2-hero{
         display: none;
+    }
+    .br-3-hero{
+        display: block;
     }
     .content {
         display: none !important;
