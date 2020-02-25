@@ -1,5 +1,8 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .mobile-lang{
+        margin-left: auto;
+    }
     .person-1{
         display: none;
     }
@@ -144,6 +147,21 @@
     .footer-center{
         width: 50%;
         margin-bottom: 24px;
+    }
+    .footer-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .wrapper-icon-footer {
+        justify-content: center;
+        width: 60%;
+    }
+    .wrapper-icon-footer li {
+        list-style: none;
+        margin: 0px 12px;
     }
     .wrapp-join-us{
         display: flex;

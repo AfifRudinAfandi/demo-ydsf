@@ -23,7 +23,7 @@
 }
 
 .add-margin{
-  margin-top: 220px;
+  margin-top: 196px;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("../images/toggel.svg");
@@ -35,4 +35,18 @@
 }
 .navbar-light .navbar-toggler:focus{
   outline: none;
+}
+
+.drop-lang{
+  position: absolute !important;
+}
+.mobile-lang .dropdown .btn-language span {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.navbar-toggler{
+  /* padding-left: 0; */
+}
+.mobile-lang .active-notif {
+  margin-right: 8px;
 }

@@ -34,6 +34,28 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="static/images/logo.png" width="86px" alt=""></a>
+      <ul class="navbar-nav nav-right mobile-lang flex-row d-lg-none d-xl-none ml-md-auto ml-sm-auto">
+        <div class="active-notif">
+          <img src="static/images/notif.svg" alt="">
+          <span class="badge badge-success"> </span>
+        </div>
+        <li class="nav-item dropdown">
+          <a class="btn btn-language dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="ic-language" src="static/images/flag-eg.png" alt="">
+            <span>EN</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right drop-lang" aria-labelledby="bd-versions">
+            <a class="dropdown-item itm-language" href="#">
+              <img class="ic-language" src="static/images/flag-eg.png" alt="">
+              <span>EN</span>
+            </a>
+            <a class="dropdown-item itm-language" href="#">
+              <img class="ic-language" src="static/images/flag-ind.png" alt="">
+              <span>ID</span>
+            </a>
+          </div>
+        </li>
+      </ul>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,12 +71,12 @@
             <a class="nav-link" href="#">Mitra</a>
           </li>
         </ul>
-        <ul class="navbar-nav nav-right flex-row ml-md-auto d-none d-md-flex">
-          <div class="active-notif">
+        <ul class="navbar-nav nav-right flex-row ml-md-auto">
+          <div class="active-notif d-none d-md-flex">
             <img src="static/images/notif.svg" alt="">
             <span class="badge badge-success"> </span>
           </div>
-          <li class="nav-item dropdown mr-3">
+          <li class="nav-item dropdown mr-3 d-none d-md-flex">
             <a class="btn btn-language dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img class="ic-language" src="static/images/flag-eg.png" alt="">
               <span>English</span>
@@ -478,6 +500,7 @@
   <!-- bxSlider Plugin -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src='static/js/app.js' type="text/javascript"></script>
+  <script src='static/js/wow.min.js' type="text/javascript"></script>
   
   <script>
     $(document).ready(function(){
@@ -541,6 +564,8 @@
           document.onscroll = scroll;
 
           });
+
+          new WOW().init();
     </script>
 </body>
 
