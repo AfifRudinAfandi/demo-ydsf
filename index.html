@@ -343,7 +343,7 @@
                 <p class="time-left"><i class="fa fa-hourglass-half"></i> 32 days left</p>
                 <p class="status-project">Collected</p>
               </div>
-              <img class="float-category" src="static/images/btn-education.svg" alt="">
+              <img class="float-category" src="static/images/btn-build.svg" alt="">
             </div>
           </div>
         </a>
@@ -356,19 +356,108 @@
 </section>
 
 
+<section class="success-story">
+  <div class="wrapp-success">
+    <div class="container ct-story">
+      <h5 class="title-success-story">Success <span>Stories</span></h5>
+      <p class="success-p">Every donation you have millions of benefits for others</p>
+    </div>
+    
+    <div class="row rw-slider">
+      <div class="item">
+        <a class="wrapper-card" href="#">
+          <div class="card card-success-story">
+            <img width="100%" src="static/images/Images-Banner-2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="success-project">Bangun Panti Tuna Netra Cerdas Bangsa</h5>
+              <p class="success-time"><i class="fa fa-hourglass-half"></i> 12 Februari | Admin</p>
+              <p class="success-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, Read more</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a class="wrapper-card" href="#">
+          <div class="card card-success-story">
+            <img width="100%" src="static/images/Images-Banner-2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="success-project">Bangun Panti Tuna Netra Cerdas Bangsa</h5>
+              <p class="success-time"><i class="fa fa-hourglass-half"></i> 12 Februari | Admin</p>
+              <p class="success-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, Read more</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a class="wrapper-card" href="#">
+          <div class="card card-success-story">
+            <img width="100%" src="static/images/Images-Banner-2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="success-project">Bangun Panti Tuna Netra Cerdas Bangsa</h5>
+              <p class="success-time"><i class="fa fa-hourglass-half"></i> 12 Februari | Admin</p>
+              <p class="success-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, Read more</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
 
+  </div>
+</section>
+<style>
+  .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: -50px;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 8;
+}
+  .bx-wrapper .bx-prev {
+    left: 90%;
+}
+.bx-wrapper .bx-next {
+    right: 5%;
+}
+  .bx-wrapper{
+    max-width: 100% !important;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: none;
+    border: none !important;
+    background: transparent;
+  }
+  .bx-viewport{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    padding: 0 56px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+  }
+  .card-success-story{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+</style>
 
 
 <section class="card-join">
-  <div class="wrapper-card">
-    <div class="container ct-card">
-      <h2 class="join-title">
-        Share to<br>Create <span class="span-first">Harmony</span> <span class="span-last">Lives</span>
-      </h2>
-      <p class="join-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>      
-      <a href="#" type="button" class="btn btn-success btn-join">Join with Us</a>
+  <div class="container ct-main-card">
+    <div class="wrapper-card">
+      <div class="container ct-card">
+        <h2 class="join-title">
+          Share to<br>Create <span class="span-first">Harmony</span> <span class="span-last">Lives</span>
+        </h2>
+        <p class="join-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>      
+        <a href="#" type="button" class="btn btn-success btn-join">Join with Us</a>
+      </div>
+      <h3 class="decor-join-title">Join with Us</h3>
     </div>
-    <h3 class="decor-join-title">Join with Us</h3>
   </div>
 </section>
 
@@ -495,6 +584,22 @@
           document.onscroll = scroll;
 
           });
+          $(function() {
+          $('.rw-slider').bxSlider({
+            auto: false,
+            autoControls: true,
+            speed: 500,
+            slideSelector: 'div.item',
+            minSlides: 4,
+            maxSlides: 4,
+            moveSlides: 1,
+            slideWidth: 380,
+            pager: false,
+            responsive: true
+
+
+          });
+        });
     </script>
 </body>
 
