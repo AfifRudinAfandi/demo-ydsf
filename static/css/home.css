@@ -91,6 +91,10 @@ img{
     width: 100%;
     object-fit: cover;
     object-position: top;
+    background-image: url("../images/hero-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-slider{
     height: 100vh;
@@ -126,6 +130,9 @@ img{
     color: #fff;
     text-align: left;
     top: 30%;
+}
+.br-1-hero{
+    display: none;
 }
 .carousel-item{
     height: 100vh;
@@ -168,14 +175,14 @@ img{
     position: absolute;
     top: 26%;
     left: 47%;
-    width: 140px;
+    width: 155px;
     animation: float 5s ease-out infinite;
 }
 .person-2{
     position: absolute;
     top: 32%;
     left: 62%;
-    width: 122px;
+    width: 140px;
     animation: float 5s ease-out infinite;
     animation-delay: -2s;
 }
@@ -183,9 +190,14 @@ img{
     position: absolute;
     top: 40%;
     left: 76%;
-    width: 214px;
+    width: 240px;
     animation: float 5s ease-out infinite;
     animation-delay: -3s;
+}
+.caracter-1,
+.caracter-2,
+.caracter-3{
+    width: 100%;
 }
 @keyframes float {
     50% {
@@ -573,6 +585,46 @@ img{
 .card-success-story:hover{
     transform: scale(1.008);
 }
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: -50px;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 8;
+}
+.bx-wrapper .bx-prev {
+    left: auto;
+    right: 10%;
+}
+.bx-wrapper .bx-next {
+    right: 5%;
+}
+.bx-wrapper{
+    max-width: 100% !important;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: none;
+    border: none !important;
+    background: transparent;
+  }
+  .bx-viewport{
+    width: 100%;
+    /* overflow: hidden;
+    position: relative;
+    height: auto;*/
+    padding-left: 56px; 
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+  }
+  /* .card-success-story{
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+
 
 /* CARD */
 .card-join{

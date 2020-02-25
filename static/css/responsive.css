@@ -1,0 +1,140 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .person-1{
+        display: none;
+    }
+    .person-2 {
+        top: 16%;
+        left: 6%;
+        width: 100px;
+        animation: none;
+    }
+    .person-3 {
+        top: 34%;
+        left: auto;
+        right: 3%;
+        width: 138px;
+        animation: none;
+    }
+    .cloud-1,
+    .cloud-2 {
+        display: none;
+    }
+    .cloud-3 {
+        top: 45%;
+        left: 4%;
+        width: 60px;
+    }
+    .cloud-4 {
+        position: absolute;
+        top: 26%;
+        left: 36%;
+        width: 52px;
+    }
+    .cloud-5 {
+        position: absolute;
+        top: 15%;
+        left: auto;
+        right: 8%;
+    }
+    .sun {
+        position: absolute;
+        top: 11%;
+        left: auto;
+        right: 6%;
+    }
+    .carousel-caption {
+        top: 50%;
+    }
+    .br-1-hero{
+        display: block;
+    }
+    .br-2-hero{
+        display: none;
+    }
+    .content {
+        display: none !important;
+    }
+    .programs-category {
+        padding-top: 0;
+    }
+    .add-margin {
+        margin-top: 80px;
+    }
+    .category-program-content {
+        text-align: center;
+    }
+    .modal-dialog-centered {
+        justify-content: center;
+    }
+    .modal-content {
+        width: 94%;
+    }
+    .card-col{
+        margin-bottom: 16px;
+    }
+    .card-program:hover{
+        box-shadow: none;
+        transform: none;
+    }
+    .ct-story{
+        text-align: center;
+    }
+    
+    .bx-viewport{
+        width: 100%;
+        padding-left: 30px; 
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .bx-wrapper .bx-controls-direction a {
+        top: 104%;
+    }
+    .bx-wrapper .bx-prev {
+        left: 40%;
+        right: auto;
+    }
+    .bx-wrapper .bx-next {
+        right: 40%;
+    }
+    .card-join .container .wrapper-card {
+        box-shadow: 0px 4px 24px rgba(45, 56, 110, 0.15);
+        width: 100%;
+        padding-top: 340px;
+        padding-bottom: 58px;
+        border-radius: 22px;
+        background-image: url(../images/bg-card-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: #FFFFFF;
+    }
+    .card-join .ct-card {
+        padding-left: 15px;
+    }
+    .decor-join-title {
+        left: 50%;
+        margin-left: -72px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -25,3 +25,14 @@
 .add-margin{
   margin-top: 220px;
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/toggel.svg");
+  width: 32px;
+  height: 32px;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-light .navbar-toggler:focus{
+  outline: none;
+}
