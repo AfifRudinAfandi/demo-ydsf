@@ -240,7 +240,7 @@
         top: 10%;
         left: 78%;
     }
-    .line-vertical-3{
+    .line-vertical:nth-last-child(2) {
         display: none;
     }
     .content{
