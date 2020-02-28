@@ -461,5 +461,22 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .ct-main-detail{
+        display:table;
+    }
+    .rw-main-detail{
+        display: table-row;
+    }
+    .col-detail-left-1{
+        float: left;
+    }
+    .col-detail-left-2{
+        float: left;
+    }
+    .col-detail-right-1{
+        float: right;
+    }
+    .col-detail-right-2{
+        float: right;
+    }
 }
