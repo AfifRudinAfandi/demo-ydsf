@@ -238,6 +238,9 @@ img{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .col-donate-left .donatur-name{
     font-weight: bold;
@@ -283,7 +286,7 @@ img{
 }
 .ic-ys-fnd{
     margin-right: 14px;
-    /* width: 72px; */
+    /* width: 48px; */
     /* height: 72px; */
 }
 .wrapp-fnd{
