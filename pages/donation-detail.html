@@ -150,9 +150,53 @@
             <p class="status-project">Collected</p>
           </div>
           <div class="button-wrapp-btm">
-            <button type="button" class="btn btn-success btn-donasi">Donasi Sekarang</button>
+            <button type="button" class="btn btn-success btn-donasi" onclick="hideandshow()">Donasi Sekarang</button>
             <button type="button" class="btn btn-outline-success btn-fundraiser">Jadi Fundraiser?</button>
           </div>
+        </div>
+        <div class="wrapper-detail-right donation-flow-2 pl-5">
+          
+          <ul class="nav nav-tabs tabs-flow" id="myTab" role="tablist">
+            <li class="nav-item item-tab-flow">
+              <a class="nav-link link-tab-flow active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">01</a>
+            </li>
+            <li class="nav-item item-tab-flow">
+              <a class="nav-link link-tab-flow" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">02</a>
+            </li>
+            <li class="nav-item item-tab-flow">
+              <a class="nav-link link-tab-flow" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">03</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <h4 class="title-nominal">Nominal Donasi</h4>
+              <div class="input-group" style="margin-bottom: 32px;">
+                <div class="input-group-prepend">
+                  <span class="input-group-text rp-ic">Rp.</span>
+                </div>
+                <input type="text" class="form-control input-value-donasi" placeholder="00.000">
+              </div>
+              <div class="wrapper-value">
+                <p class="value-donasi-sugess">Rp. 50.000</p>
+                <p class="value-donasi-sugess sugess-2">Rp. 100.000</p>
+                <p class="value-donasi-sugess sugess-2">Rp. 500.000</p>
+              </div>
+              <div class="wrapper-button d-flex flex-row">
+                <button type="button" class="btn btn-item btn-outline-success btn-back" onclick="back()">Kembali</button>
+                <button type="button" class="btn btn-item btn-success btn-next">Lanjut</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="col-md-7 col-detail-left-2">
@@ -471,6 +515,14 @@
               }); 
             });
           });
+    function hideandshow(){      
+      $(".donation-flow-1").addClass("hide-panel");
+      $(".donation-flow-2").addClass("show-panel");
+    }
+    function back(){     
+      $(".donation-flow-1").removeClass("hide-panel");
+      $(".donation-flow-2").removeClass("show-panel");
+    }
     </script>
 </body>
 
