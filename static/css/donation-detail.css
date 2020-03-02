@@ -523,10 +523,8 @@ img{
     margin-bottom: 34px;
 }
 .tabs-flow{
-    
-border: none;
-    
-margin-bottom: 20px;
+    border: none;
+    margin-bottom: 20px;
 }
 .item-tab-flow{
     width: 28px;
@@ -579,6 +577,7 @@ margin-bottom: 20px;
     border-radius: 34px;
     cursor: pointer;
     margin-bottom: 56px;
+    user-select: none;
 }
 .sugess-2{
     background-color: #35417D !important;
@@ -595,4 +594,101 @@ margin-bottom: 20px;
     padding: 12px 26px;
     margin-right: 14px;
     width: 120px;
+}
+
+.tabs-flow-2{
+    width: 100%;
+    margin-bottom: 32px;
+    background: #E9EBEF;
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-tab-flow-2{
+    width: 33%;
+    text-align: center;
+}
+.link-tab-flow-2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E !important;
+    border: none;
+    border-radius: 7px !important;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 0;
+    border: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.link-tab-flow-2 i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.label-nama{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909AAD;
+}
+.label-nomor{
+    margin-right: 6px;
+    border-radius: 8px !important;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E;
+
+}
+.input-group .tel-number{
+    border-radius: 6px !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E;
+}
+.input-group .tel-number::placeholder{
+    color: #2D386E;
+}
+.custom-input{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E;
+    border: 1px solid #E2EDF8;
+    border-radius: 6px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #48b349;
+    background-color: #48b349;
+}
+.wrapper-button-ctr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+.donasi-sekarang{
+    background: #48B349;
+    box-shadow: 0px 4px 24px rgba(72, 179, 73, 0.35);
+    border-radius: 80px;
+    padding: 12px 28px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
 }
