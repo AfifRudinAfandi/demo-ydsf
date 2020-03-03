@@ -341,7 +341,9 @@
     .link-tab-flow-2 span{
         display: none;
     }
-
+    .wrapper-button {
+        justify-content: space-between;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
