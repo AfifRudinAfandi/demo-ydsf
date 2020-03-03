@@ -228,20 +228,29 @@
                   <div class="wrapper-button-ctr">
                     <button class="btn btn-success donasi-sekarang" data-toggle="modal" data-target="#exampleModal">Donasi Sekarang</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content modal-verifikasi">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Verifikasi</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
+                              <span aria-hidden="true"></span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <p class="desc-nomor">Masukkan kode verifikasi yang telah dikirimkan ke <span class="phone-number">0812 XXXX XXXX</span></p>
+                            <a class="ubah-nomor" href="#"><i class="fa fa-pencil"></i> Ubah nomor HP</a>
+                            <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                              <div class="wrapp">
+                                <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                                <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                                <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                                <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                                <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                              </div>
+                              <p class="belum-terima">Belum menerima kode?</p>
+                              <a class="kirim-ulang" href="">Kirim Ulang Kode</a>
+                              <button class="btn btn-success btn-salurkan">Salurkan Donasi</button>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -594,6 +603,32 @@
       $(".donation-flow-1").removeClass("hide-panel");
       $(".donation-flow-2").removeClass("show-panel");
     }
+    </script>
+    <script>
+      $('.digit-group').find('input').each(function() {
+      $(this).attr('maxlength', 1);
+      $(this).on('keyup', function(e) {
+        var parent = $($(this).parent());
+        
+        if(e.keyCode === 8 || e.keyCode === 37) {
+          var prev = parent.find('input#' + $(this).data('previous'));
+          
+          if(prev.length) {
+            $(prev).select();
+          }
+        } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+          var next = parent.find('input#' + $(this).data('next'));
+          
+          if(next.length) {
+            $(next).select();
+          } else {
+            if(parent.data('autosubmit')) {
+              parent.submit();
+            }
+          }
+        }
+      });
+    });
     </script>
 </body>
 

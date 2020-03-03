@@ -326,6 +326,22 @@
         width: 48px;
     }
 
+    .tabs-flow{
+        justify-content: center;
+    }
+    .wrapper-value{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .wrapper-value .value-donasi-sugess{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .link-tab-flow-2 span{
+        display: none;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
