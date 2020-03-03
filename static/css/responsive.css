@@ -344,6 +344,10 @@
     .wrapper-button {
         justify-content: space-between;
     }
+    .modal-verifikasi .modal-body{
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
