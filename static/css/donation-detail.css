@@ -724,8 +724,14 @@ img{
     right: 0;
     height: 32px;
     width: 32px;
-    opacity: 100%;
+    opacity: 1 !important;
     background-image: url("../images/ic-close.svg");
+}
+.modal-header .close:hover{
+    opacity: 100%;
+}
+.modal-header .close:focus{
+    outline: none !important;
 }
 .modal-verifikasi .modal-body{
     padding-left: 71px;
@@ -822,4 +828,183 @@ img{
     box-shadow: 0px 4px 24px rgba(72, 179, 73, 0.35);
     border-radius: 80px;
     padding: 12px 28px;
+}
+
+
+
+
+.modal-cara-donasi {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    outline: 0;
+    min-height: 350px;
+}
+
+.modal-cara-donasi .modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.modal-cara-donasi .modal-header .modal-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2D386E;
+}
+.modal-cara-donasi .modal-body{
+    padding-bottom: 40px;
+}
+.modal-cara-donasi .modal-body .desc-nomor{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #909AAD;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.tab-pane .wrapper-bank{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tab-pane .wrapper-bank .link-bank .bank-logo{
+    width: 100px;
+}
+
+
+
+
+
+
+.modal-detail-donasi {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    outline: 0;
+    min-height: 350px;
+}
+
+.modal-detail-donasi .modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.modal-detail-donasi .modal-header .modal-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2D386E;
+}
+.modal-detail-donasi .modal-body{
+    padding-bottom: 40px;
+}
+.modal-detail-donasi .modal-body .desc-nomor{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #909AAD;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.card-detail-donasi{
+    background: #FFFFFF;
+    border: 1px solid #E2EDF8;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.card-detail-donasi .card-header{
+    background: #E2EDF8;
+    border-bottom: none;
+}
+.card-detail-donasi .card-header .program-donasi-card{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E;
+    margin-bottom: 10px;
+}
+.card-detail-donasi .card-header .judul{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909AAD;
+    margin-bottom: 0;
+}
+.card-detail-donasi .card-body .judul-nama{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909AAD;
+}
+.card-detail-donasi .card-body .nama-donatur,
+.card-detail-donasi .card-body .nominal-donasi{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2D386E;
+}
+.card-detail-donasi .card-body .jumlah-transfer{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FF6060;
+}
+.card-detail-donasi .card-body .jumlah-transfer span{
+    border: 1px solid #909AAD;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 4px;
+    padding: 0 4px;
+}
+.wrapper-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #909AAD;
+    border-radius: 4px;
+    padding: 16px 24px;
+    position: relative;
+}
+.wrapper-info .info-pembayaran{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.wrapper-info .info-pembayaran-2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.ikon-nduwur{
+    position: absolute;
+    top: -16px;
+    left: 130px;
+    font-size: 42px;
+    color: #909AAD;
 }

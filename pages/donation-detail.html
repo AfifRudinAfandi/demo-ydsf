@@ -226,41 +226,116 @@
                   </div>
 
                   <div class="wrapper-button-ctr">
-                    <button class="btn btn-success donasi-sekarang" data-toggle="modal" data-target="#exampleModal">Donasi Sekarang</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content modal-verifikasi">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Verifikasi</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true"></span>
-                            </button>
+                    <button class="btn btn-success donasi-sekarang" data-toggle="modal" data-target="#detail-donasi">Donasi Sekarang</button>
+                  </div>
+                </div>
+
+
+                <!-- MODAL-1 -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content modal-verifikasi">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Verifikasi</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="desc-nomor">Masukkan kode verifikasi yang telah dikirimkan ke <span class="phone-number">0812 XXXX XXXX</span></p>
+                        <a class="ubah-nomor" href="#"><i class="fa fa-pencil"></i> Ubah nomor HP</a>
+                        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                          <div class="wrapp">
+                            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                            <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
                           </div>
-                          <div class="modal-body">
-                            <p class="desc-nomor">Masukkan kode verifikasi yang telah dikirimkan ke <span class="phone-number">0812 XXXX XXXX</span></p>
-                            <a class="ubah-nomor" href="#"><i class="fa fa-pencil"></i> Ubah nomor HP</a>
-                            <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
-                              <div class="wrapp">
-                                <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-                                <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-                                <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-                                <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
-                                <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
-                              </div>
-                              <p class="belum-terima">Belum menerima kode?</p>
-                              <a class="kirim-ulang" href="">Kirim Ulang Kode</a>
-                              <button class="btn btn-success btn-salurkan">Salurkan Donasi</button>
-                            </form>
+                          <p class="belum-terima">Belum menerima kode?</p>
+                          <a class="kirim-ulang" href="#">Kirim Ulang Kode</a>
+                          <button class="btn btn-success btn-salurkan" data-dismiss="modal" data-toggle="modal" data-target="#cara-donasi">Salurkan Donasi</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MODAL-2 -->
+                <div class="modal fade" id="cara-donasi" tabindex="-1" role="dialog" aria-labelledby="cara-donasi-label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content modal-cara-donasi">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cara Donasi</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="desc-nomor">Pilih jenis bank dan motode penyaluran donasi.</p>
+                        <ul class="nav nav-tabs tabs-flow-2" id="myTab" role="tablist">
+                          <li class="nav-item item-tab-flow-2">
+                            <a class="nav-link link-tab-flow-2 active" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="true">Bank Transfer</a>
+                          </li>
+                          <li class="nav-item item-tab-flow-2">
+                            <a class="nav-link link-tab-flow-2" id="wallet-tab" data-toggle="tab" href="#wallet" role="tab" aria-controls="wallet" aria-selected="false">E-Wallet</a>
+                          </li>
+                          <li class="nav-item item-tab-flow-2">
+                            <a class="nav-link link-tab-flow-2" id="ris-tab" data-toggle="tab" href="#ris" role="tab" aria-controls="ris" aria-selected="false">Q-Ris</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="bank" role="tabpanel">
+                            <div class="wrapper-bank">
+                              <a class="link-bank" href="#" data-dismiss="modal" data-toggle="modal" data-target="#detail-donasi"><img class="bank-logo" src="../static/images/bca.png" alt=""></a>
+                              <a class="link-bank" href="#"><img class="bank-logo" src="../static/images/bni.png" alt=""></a>
+                              <a class="link-bank" href="#"><img class="bank-logo" src="../static/images/man.png" alt=""></a>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="wallet" role="tabpanel"></div>
+                          <div class="tab-pane fade" id="ris" role="tabpanel"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MODAL-3 -->
+                <div class="modal fade" id="detail-donasi" tabindex="-1" role="dialog" aria-labelledby="detail-donasi-label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content modal-detail-donasi">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="detail-donasi-label">Detail Donation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="desc-nomor">Pilih jenis bank dan motode penyaluran donasi.</p>
+                        <div class="card card-detail-donasi">
+                          <div class="card-header">
+                            <p class="judul">Program Donasi</p>
+                            <h5 class="program-donasi-card">Bangun Panti Tuna Netra Cerdas Bangsa</h5>
+                            <p class="cabang mb-2"><i class="fa fa-map-marker"></i>YDSF Surabaya</p>
+                          </div>
+                          <div class="card-body">
+                            <p class="judul-nama">Nama Donatur</p>
+                            <p class="nama-donatur">Fatchur Beny Adi Saputra</p>
+                            <p class="judul-nama">Nominal</p>
+                            <p class="nominal-donasi">Rp. 5.000.000,-</p>
+                            <p class="judul-nama">Jumlah Transfer</p>
+                            <p class="jumlah-transfer">Rp. 5.000.<span>320,-</span></p>
+                            <div class="wrapper-info">
+                              <i class="ikon-nduwur fa fa-sort-up"></i>
+                              <h5 class="info-pembayaran">Transfer tepat sampai 3 digit terakhir</h5>
+                              <p class="info-pembayaran-2">Perbedaan nominal menghambat proses verifiksi</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-
                 </div>
-
-
 
                 <div class="tab-pane fade" id="fb" role="tabpanel">...</div>
                 <div class="tab-pane fade" id="google" role="tabpanel" >...</div>
