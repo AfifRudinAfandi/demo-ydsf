@@ -348,6 +348,16 @@
         padding: 1rem;
         padding-bottom: 2rem;
     }
+
+    .bank-span{
+        display: none;
+    }
+    .wrapper-bank{
+        justify-content: space-evenly !important;
+    }
+    .wrapper-bank .link-bank img{
+        margin-bottom: 16px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

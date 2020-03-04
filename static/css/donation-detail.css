@@ -875,6 +875,8 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .tab-pane .wrapper-bank .link-bank .bank-logo{
     width: 100px;
@@ -927,6 +929,7 @@ img{
     border: 1px solid #E2EDF8;
     box-sizing: border-box;
     border-radius: 6px;
+    margin-bottom: 28px;
 }
 .card-detail-donasi .card-header{
     background: #E2EDF8;
@@ -979,7 +982,6 @@ img{
 .wrapper-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background: #909AAD;
     border-radius: 4px;
     padding: 16px 24px;
@@ -992,6 +994,7 @@ img{
     line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 0;
+    text-align: center;
 }
 .wrapper-info .info-pembayaran-2{
     font-style: normal;
@@ -1000,6 +1003,7 @@ img{
     line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 0;
+    text-align: center;
 }
 .ikon-nduwur{
     position: absolute;
@@ -1007,4 +1011,57 @@ img{
     left: 130px;
     font-size: 42px;
     color: #909AAD;
+}
+
+.title-info-rekening{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #909AAD;
+}
+.ic-btm-bca{
+    width: 200px;
+}
+.title-no-rek{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #909AAD;
+    margin-bottom: 0;
+}
+.no-rek,
+.nama-yayasan{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2D386E;
+    margin-bottom: 0;
+}
+.btm-red-1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 0;
+}
+.btm-red-2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 0;
+}
+.wrapp-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
 }
