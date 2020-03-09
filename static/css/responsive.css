@@ -358,6 +358,9 @@
     .wrapper-bank .link-bank img{
         margin-bottom: 16px;
 }
+    .ct-main-detail{
+        max-width: 100% !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -371,6 +374,42 @@
     } */
     .desc-hero {
         max-width: 340px;
+    }
+    .ct-main-detail{
+        max-width: 100% !important;
+    }
+    .wrapper-detail-right{
+        padding-left: 0 !important;
+    }
+    
+    .col-detail-left-1 {
+        height: 60vh;
+    }
+    .col-detail-left-1 .banner-detail-donation {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        height: 60vh;
+        border-radius: 0;
+    }
+    .ic-float-wrapper {
+        right: 20px;
+        top: auto;
+        bottom: -32px;
+    }
+    .donation-flow-2{
+        max-width: 450px;
+        margin: auto;
+    }
+    .tabs-flow{
+        justify-content: center;
+    }
+    .wrapper-detail-right-2{
+        padding-left: 0 !important;
+    }
+    .nav-tabs-detail{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -483,6 +522,9 @@
     }
     .footer-left .footer-content {
         max-width: 370px;
+    }
+    .ct-main-detail{
+        max-width: 100%;
     }
 }
 
